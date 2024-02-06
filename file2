@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Moving from Right to Left</title>
+<style>
+    .moving-message {
+        position: absolute;
+        right: 100%; /* Start off-screen */
+        top: 50%; /* Center vertically */
+        white-space: nowrap; /* Prevent line breaks */
+        animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
+    }
+
+    @keyframes moveLeft {
+        0% {
+            right: 100%; /* Start off-screen */
+        }
+        100% {
+            right: 0; /* Move to left edge of container */
+        }
+    }
+</style>
+</head>
+<body>
+<div class="moving-message">
+    Welcome da 
+</div>
+</body>
+</html>
